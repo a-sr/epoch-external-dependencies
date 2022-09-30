@@ -1,0 +1,33 @@
+name: Build and Publish
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Check Maven
+        run: mvn -version
+        shell: bash
+
+      - name: Build
+        run: mvn package
+        shell: bash
+
+      - name: Archive update site
+        uses: actions/upload-artifact@v2
+        with:
+          name: Epoch External Dependencies P2 Repository
+          path: org.lflang.epoch.external.dependencies.repository/target/repository/
+          if-no-files-found: error
+
