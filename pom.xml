@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.lflang.epoch.external.dependencies.root</groupId>
+  <artifactId>root</artifactId>
+  <version>0.1.0</version>
+  <packaging>pom</packaging>
+
+
+  <!-- Define a few properties used throughout all build profiles. -->
+  <properties>
+    <tycho-version>1.7.0</tycho-version>
+    <targetJdk>17</targetJdk>
+    
+    <eclipse-url>https://download.eclipse.org/releases/latest</eclipse-url>
+
+    <kotlin-version>1.6.20</kotlin-version>
+  </properties>
+
+  <modules>
+    <module>org.lflang.epoch.external.dependencies</module>
+    <module>org.lflang.epoch.external.dependencies.repository</module>
+  </modules>
+
+  <!-- Eclipse p2 repositories -->
+  <repositories>
+    <repository>
+      <id>eclipse-release</id>
+      <url>${eclipse-url}</url>
+      <layout>p2</layout>
+    </repository>
+  </repositories>
+
+  <!-- Maven plugin repositories -->
+  <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <name>Maven Plugin Repository</name>
+      <url>https://repo1.maven.org/maven2</url>
+    </pluginRepository>
+
+    <pluginRepository>
+      <id>jboss-releases</id>
+      <name>JBoss Releases Maven Repository</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <!-- Modify the build process to add Tycho -->
+  <build>
+    <plugins>
+      <!-- we need tycho plugin to build eclipse plugins -->
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

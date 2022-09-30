@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+
+   <description name="Lingua Franca Epoch Dependencies Provider">
+      Update site for the Lingua Franca Epoch IDE, providing external dependecies otherwise not available.
+   </description>
+   
+   <bundle id="org.lflang.epoch.external.dependencies"/>
+
+</site>
