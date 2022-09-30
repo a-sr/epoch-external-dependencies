@@ -36,6 +36,11 @@ jobs:
           path: org.lflang.epoch.external.dependencies.repository/target/repository/
           if-no-files-found: error
 
+      - name: Archive update site for pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: org.lflang.epoch.external.dependencies.repository/target/repository/
+
   publish:
     needs: build
 
