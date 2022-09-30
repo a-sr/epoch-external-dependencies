@@ -8,6 +8,11 @@ on:
 
   workflow_dispatch:
 
+# Mutual exclusion for publishing to github pages
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,3 +36,24 @@ jobs:
           path: org.lflang.epoch.external.dependencies.repository/target/repository/
           if-no-files-found: error
 
+  publish:
+    needs: build
+
+    # Set permissions for github pages
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Publish P2 Repository
+        id: deployment
+        uses: actions/deploy-pages@v1
