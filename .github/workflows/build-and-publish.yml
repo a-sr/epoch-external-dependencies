@@ -30,13 +30,6 @@ jobs:
         shell: bash
 
       - name: Archive update site
-        uses: actions/upload-artifact@v2
-        with:
-          name: Epoch External Dependencies P2 Repository
-          path: org.lflang.epoch.external.dependencies.repository/target/repository/
-          if-no-files-found: error
-
-      - name: Archive update site for pages
         uses: actions/upload-pages-artifact@v1
         with:
           path: org.lflang.epoch.external.dependencies.repository/target/repository/
