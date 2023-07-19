@@ -16,6 +16,12 @@
     <eclipse-url>https://download.eclipse.org/releases/latest</eclipse-url>
 
     <kotlin-version>1.6.20</kotlin-version>
+
+    <!-- JSON version used in the LF Verifier -->
+    <jsonVersion>20230618</jsonVersion>
+
+    <!-- ANTLR4 version used in the LF Verifier (not the one used in xtext) -->
+    <antlr4Version>4.7.2</antlr4Version>
   </properties>
 
   <modules>

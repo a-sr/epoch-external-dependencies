@@ -19,6 +19,16 @@
       <artifactId>kotlin-stdlib</artifactId>
       <version>${kotlin-version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>${jsonVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr4-runtime</artifactId>
+      <version>${antlr4Version}</version>
+    </dependency>
   </dependencies>
 
   <build>
