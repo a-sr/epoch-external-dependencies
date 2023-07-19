@@ -36,4 +36,6 @@ Export-Package: kotlin,
  kotlin.sequences,
  kotlin.system,
  kotlin.text,
- kotlin.time
+ kotlin.time,
+ org.json,
+ org.antlr.v4.runtime
