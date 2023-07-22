@@ -9,15 +9,15 @@
       <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>org.lflang.epoch.external.dependencies</artifactId>
+  <artifactId>org.lflang.epoch.mirror.json</artifactId>
   <packaging>eclipse-plugin</packaging>
-  <version>0.1.0</version>
+  <version>1.20230618.0</version>
 
   <dependencies>
     <dependency>
-      <groupId>org.jetbrains.kotlin</groupId>
-      <artifactId>kotlin-stdlib</artifactId>
-      <version>1.6.20</version>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20230618</version>
     </dependency>
   </dependencies>
 
@@ -30,7 +30,7 @@
         <configuration>
           <outputDirectory>lib</outputDirectory>
           <excludeTransitive>false</excludeTransitive>
-          <includeGroupIds>org.jetbrains.kotlin</includeGroupIds>
+          <includeGroupIds>org.json</includeGroupIds>
           <includeScope>runtime</includeScope>
         </configuration>
         <executions>

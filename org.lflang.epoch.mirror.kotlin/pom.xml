@@ -9,15 +9,15 @@
       <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>org.lflang.epoch.external.dependencies</artifactId>
+  <artifactId>org.lflang.epoch.mirror.kotlin</artifactId>
   <packaging>eclipse-plugin</packaging>
-  <version>0.1.0</version>
+  <version>1.6.21</version>
 
   <dependencies>
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-stdlib</artifactId>
-      <version>1.6.20</version>
+      <version>1.6.21</version>
     </dependency>
   </dependencies>
 

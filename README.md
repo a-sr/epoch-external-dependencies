@@ -1,12 +1,25 @@
-This repository wraps prebuilt jars of the Kotlin project into an Eclipse plugin for use in the Epoch IDE.
+# Epoch External Dependencies
+
+This repository wraps prebuilt jars of maven dependencies that are not available (at the time) on p2 updatesites into Eclipse plugins for use in the Epoch IDE.
+The artifacts are pulled from maven central and redistributed via an Eclipse p2 repository acting as a mirror.
+
+## Content
+
+The main directories of the repository are the following:
+
+- *org.lflang.epoch.mirror.kotlin* The plugin containing the jars of Kotlin
+- *org.lflang.epoch.mirror.json* The plugin containing the jars of org.json
+- *org.lflang.epoch.external.dependencies* A legacy alias of *org.lflang.epoch.mirror.kotlin*
+- *org.lflang.epoch.external.dependencies.repository* The p2 repository
+
+## Kotlin
 
 You can find the Kotlin source code at: https://github.com/JetBrains/kotlin
 The code is made available under the Apache License, Version 2.0, which can be read in the LICENSE file.
 
-The artifacts are pulled from maven central (https://mvnrepository.com/artifact/org.jetbrains.kotlin) and redistributed via an Eclipse p2 repository.
+Maven central source: https://mvnrepository.com/artifact/org.jetbrains.kotlin
 
+## Json
 
-The main directories of the repository are the following:
+Maven central source: https://mvnrepository.com/artifact/org.json/json
 
-- *org.lflang.epoch.external.dependencies* The plugin containing the jars of Kotlin to be avaible as Eclipse plugin
-- *org.lflang.epoch.external.dependencies.repository* The p2 repository

@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Lingua Franca Epoch Dependencies
-Bundle-SymbolicName: org.lflang.epoch.external.dependencies
-Bundle-Version: 0.1.0
-Automatic-Module-Name: org.lflang.epoch.external.dependencies
+Bundle-Name: Lingua Franca Epoch Dependency Kotlin
+Bundle-SymbolicName: org.lflang.epoch.mirror.kotlin
+Bundle-Version: 1.6.21
+Automatic-Module-Name: org.lflang.epoch.mirror.kotlin
 Bundle-RequiredExecutionEnvironment: JavaSE-17
-Bundle-ClassPath: lib/kotlin-stdlib-1.6.20.jar,
- lib/kotlin-stdlib-common-1.6.20.jar
+Bundle-ClassPath: lib/kotlin-stdlib-1.6.21.jar,
+ lib/kotlin-stdlib-common-1.6.21.jar
 Export-Package: kotlin,
  kotlin.annotation,
  kotlin.collections,

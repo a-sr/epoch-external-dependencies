@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Lingua Franca Epoch Dependency JSON
+Bundle-SymbolicName: org.lflang.epoch.mirror.json
+Bundle-Version: 1.20230618.0
+Export-Package: org.json
+Automatic-Module-Name: org.lflang.epoch.mirror.json
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-ClassPath: lib/json-20230618.jar

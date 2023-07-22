@@ -10,21 +10,16 @@
 
   <!-- Define a few properties used throughout all build profiles. -->
   <properties>
-    <tycho-version>1.7.0</tycho-version>
+    <tycho-version>2.7.5</tycho-version>
     <targetJdk>17</targetJdk>
     
     <eclipse-url>https://download.eclipse.org/releases/latest</eclipse-url>
 
-    <kotlin-version>1.6.20</kotlin-version>
-
-    <!-- JSON version used in the LF Verifier -->
-    <jsonVersion>20230618</jsonVersion>
-
-    <!-- ANTLR4 version used in the LF Verifier (not the one used in xtext) -->
-    <antlr4Version>4.7.2</antlr4Version>
   </properties>
 
   <modules>
+    <module>org.lflang.epoch.mirror.json</module>
+    <module>org.lflang.epoch.mirror.kotlin</module>
     <module>org.lflang.epoch.external.dependencies</module>
     <module>org.lflang.epoch.external.dependencies.repository</module>
   </modules>
