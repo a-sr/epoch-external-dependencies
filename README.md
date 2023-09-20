@@ -9,6 +9,7 @@ The main directories of the repository are the following:
 
 - *org.lflang.epoch.mirror.kotlin* The plugin containing the jars of Kotlin
 - *org.lflang.epoch.mirror.json* The plugin containing the jars of org.json
+- *org.lflang.epoch.mirror.json* The plugin containing the annotations of org.jcip
 - *org.lflang.epoch.external.dependencies* A legacy alias of *org.lflang.epoch.mirror.kotlin*
 - *org.lflang.epoch.external.dependencies.repository* The p2 repository
 
@@ -22,4 +23,8 @@ Maven central source: https://mvnrepository.com/artifact/org.jetbrains.kotlin
 ## Json
 
 Maven central source: https://mvnrepository.com/artifact/org.json/json
+
+## JCIP
+
+Maven central source: https://mvnrepository.com/artifact/net.jcip/jcip-annotations
 

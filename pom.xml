@@ -20,6 +20,7 @@
   <modules>
     <module>org.lflang.epoch.mirror.json</module>
     <module>org.lflang.epoch.mirror.kotlin</module>
+    <module>org.lflang.epoch.mirror.jcip</module>
     <module>org.lflang.epoch.external.dependencies</module>
     <module>org.lflang.epoch.external.dependencies.repository</module>
   </modules>

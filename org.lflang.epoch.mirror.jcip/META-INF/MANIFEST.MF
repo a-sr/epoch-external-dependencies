@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Lingua Franca Epoch Dependency JCIP
+Bundle-SymbolicName: org.lflang.epoch.mirror.jcip
+Bundle-Version: 1.0.0
+Export-Package: net.jcip.annotations
+Automatic-Module-Name: org.lflang.epoch.mirror.jcip
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-ClassPath: lib/jcip-annotations-1.0.jar
