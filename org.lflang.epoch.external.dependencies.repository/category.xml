@@ -7,6 +7,7 @@
    
    <bundle id="org.lflang.epoch.mirror.json"/>
    <bundle id="org.lflang.epoch.mirror.kotlin"/>
+   <bundle id="org.lflang.epoch.mirror.jcip"/>
    <bundle id="org.lflang.epoch.external.dependencies"/>
 
 </site>
